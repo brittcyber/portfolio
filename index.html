@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=https://canva.link/kcw1oj1w4dwc9qv">
-    <title>Brittanique Johnson | IT Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brittanique Johnson | IT Infrastructure Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #0d1117; --card: #161b22; --accent: #58a6ff; --text: #c9d1d9; }
+        body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; margin: 0; }
+        
+        .hero { height: 60vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(rgba(13,17,23,0.7), rgba(13,17,23,0.7)), url('assets/20251214_135220.jpg') center/cover; text-align: center; }
+        .hero-content h1 { font-family: 'Outfit', sans-serif; font-size: 3.5rem; color: #fff; margin: 0; }
+        
+        .grid { max-width: 1200px; margin: -60px auto 40px; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card); border: 1px solid #30363d; border-radius: 12px; padding: 20px; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        
+        .media-container { border-radius: 8px; overflow: hidden; margin-bottom: 15px; background: #000; }
+        img, video { width: 100%; display: block; height: 250px; object-fit: cover; }
+        h3 { color: var(--accent); margin-top: 0; }
+        .narrative { font-size: 0.9rem; line-height: 1.5; opacity: 0.9; }
+        .badge { background: #238636; color: #fff; padding: 3px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://canva.link/kcw1oj1w4dwc9qv">click here to view my portfolio</a>.</p>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Brittanique Johnson</h1>
+        <p>Computer Systems Student | Infrastructure Specialist</p>
+    </div>
+</section>
+
+<div class="grid">
+    <div class="card">
+        <div class="media-container">
+            <img src="assets/20251214_135206.jpg" alt="Hardware Repair">
+        </div>
+        <span class="badge">Physical Layer</span>
+        <h3>Motherboard Diagnostic</h3>
+        <p class="narrative">Performing a teardown to isolate a motherboard failure and preparing for an SSD data migration task.</p>
+    </div>
+
+    <div class="card">
+        <div class="media-container">
+            <video controls>
+                <source src="assets/20251214_135456.mp4" type="video/mp4">
+            </video>
+        </div>
+        <span class="badge">Infrastructure</span>
+        <h3>Internal Audit Video</h3>
+        <p class="narrative">Visual documentation of internal cabling and component layout during my 241.99-hour internship.</p>
+    </div>
+
+    <div class="card">
+        <div class="media-container">
+            <img src="assets/IMG-20260419-WA0002(1).jpg" alt="Security Config">
+        </div>
+        <span class="badge">Security</span>
+        <h3>Workstation Hardening</h3>
+        <p class="narrative">Implementing local security policies and BitLocker encryption as a Data Security Officer.</p>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 40px; border-top: 1px solid #30363d; font-size: 0.8rem;">
+    <p>© 2026 Brittanique Johnson - Vector Technology Institute</p>
+</footer>
+
 </body>
 </html>
